@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>drupal-client-browser</title>
+</head>
+
+<body>
+
+<script src="../build/drupal-client-browser.js"></script>
+<script>
+
+    drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
+
+    drupal.systemConnect(
+        function(resp){
+            alert(resp);
+        }, function(e){
+            alert(e);
+        });
+
+
+</script>
+</body>
+
+</html>

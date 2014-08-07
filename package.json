@@ -2,7 +2,7 @@
   "name": "drupal-browser-client",
   "version": "0.0.1",
   "description": "Using drupal-client in the browser",
-  "main": "index.html",
+  "main": "app/index.html",
   "scripts": {
     "test": "karma start karma.config.js"
   },
@@ -22,6 +22,11 @@
   },
   "homepage": "https://github.com/jbeuckm/drupal-client-browser",
   "devDependencies": {
-    "karma": "~0.12.21"
+    "karma": "~0.12.21",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~2.1.4"
+  },
+  "dependencies": {
+    "drupal-client": "git://github.com/jbeuckm/drupal-client.git#browser"
   }
 }
