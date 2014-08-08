@@ -1,4 +1,4 @@
-<html>
+<html ng-app="drupalSpa">
 
 <head>
     <title>drupal-client-browser</title>
@@ -6,20 +6,21 @@
 
 <body>
 
+<div>
+
+    <div ng-view></div>
+
+
+</div>
+
 <script src="../build/drupal-client-browser.js"></script>
-<script>
+<script src="../bower_components/angularjs/angular.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.min.js"></script>
 
-    drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
+<script src="app.js"></script>
+<script src="controllers/login-controller.js"></script>
+<script src="controllers/user-controller.js"></script>
 
-    drupal.systemConnect(
-        function(resp){
-            alert(resp);
-        }, function(e){
-            alert(e);
-        });
-
-
-</script>
 </body>
 
 </html>

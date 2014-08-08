@@ -1,2 +1,2 @@
-var drupal = require('./node_modules/drupal-client/lib/drupal');
+window.drupal = require('./node_modules/drupal-client/lib/drupal');
 

@@ -1,0 +1,29 @@
+{
+  "name": "drupal-spa",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jbeuckm/drupal-client-browser",
+  "authors": [
+    "joe@beigerecords.com"
+  ],
+  "description": "Example of drupal-client in the browser",
+  "main": "app/index.html",
+  "keywords": [
+    "drupal",
+    "angular",
+    "browser",
+    "rest",
+    "spa"
+  ],
+  "license": "Don't read software licenses. Don't write software licenses.",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.21",
+    "angular-route": "~1.2.21"
+  }
+}
