@@ -10,6 +10,7 @@ angular.module('drupalSpa').controller('LoginController', ['$scope', '$rootScope
                         console.log(u);
                         $rootScope.user = u;
                         $location.path('/user');
+                        $scope.$apply();
                     },
                     function(err) {
                         console.log(err);
