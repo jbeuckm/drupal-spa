@@ -33,3 +33,5 @@ python -m SimpleHTTPServer 9000
 ```
 
 Then open the SPA at http://localhost:9000
+
+![Screenshot](loged_in.png)
