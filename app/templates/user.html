@@ -1,10 +1,21 @@
-<div class="well">
+<center>
 
 <div><img width="100" height="100" src="{{$root.user.picture.url}}"></div>
+<h2 class="form-signin-heading">User: {{$root.user.name}}</h2>
 
-<div>Name: {{$root.user.name}}</div>
+</center>
 
-<div>Mail: {{$root.user.mail}}</div>
+<div class="well">
+
+  <div>Roles:
+    <li ng-repeat="role in $root.user.roles">{{role}}</li>
+  </div>
+
+  <div>Mail: {{$root.user.mail}}</div>
+
+  <div>Since: {{$root.user.created * 1000 | date:'medium'}}</div>
+  <div>Last Login: {{$root.user.access * 1000 | date:'medium'}}</div>
+
 
 </div>
 
