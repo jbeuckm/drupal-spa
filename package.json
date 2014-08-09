@@ -27,6 +27,6 @@
     "grunt-browserify": "~2.1.4"
   },
   "dependencies": {
-    "drupal-client": "git://github.com/jbeuckm/drupal-client.git#browser"
+    "drupal-client": "latest"
   }
 }
