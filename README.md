@@ -3,6 +3,8 @@ drupal-spa
 
 An example using drupal-client in the browser.
 
+![Screenshot](login_box.png)
+
 ### Setup ###
 
 Requires an instance of [Drupal Services](https://www.drupal.org/project/services) 3.5 with all the proper configuration to run the drupal-client tests.
