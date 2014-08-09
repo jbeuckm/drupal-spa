@@ -3,11 +3,11 @@ var app = angular.module('drupalSpa', ['ngRoute'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.
             when('/login', {
-                templateUrl: 'templates/login.html',
+                templateUrl: 'app/templates/login.html',
                 controller: 'LoginController'
             }).
             when('/user', {
-                templateUrl: 'templates/user.html',
+                templateUrl: 'app/templates/user.html',
                 controller: 'UserController'
             }).
             otherwise({

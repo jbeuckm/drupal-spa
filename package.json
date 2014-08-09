@@ -2,7 +2,7 @@
   "name": "drupal-browser-client",
   "version": "0.0.1",
   "description": "Using drupal-client in the browser",
-  "main": "app/index.html",
+  "main": "index.html",
   "scripts": {
     "test": "karma start karma.config.js"
   },

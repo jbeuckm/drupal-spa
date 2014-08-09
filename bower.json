@@ -6,7 +6,7 @@
     "joe@beigerecords.com"
   ],
   "description": "Example of drupal-client in the browser",
-  "main": "app/index.html",
+  "main": "index.html",
   "keywords": [
     "drupal",
     "angular",
