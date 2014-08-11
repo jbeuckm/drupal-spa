@@ -9,6 +9,7 @@ angular.module('drupalSpa').controller('UserController', ['$scope', '$rootScope'
                 console.log(u);
                 $rootScope.user = null;
                 $location.path('/login');
+                $scope.$apply();
             },
             function(err) {
                 console.log(err);

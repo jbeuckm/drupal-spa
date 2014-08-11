@@ -28,6 +28,7 @@
     "grunt-browserify": "~2.1.4"
   },
   "dependencies": {
-    "drupal-client": "latest"
+    "node-persist": "0.0.2",
+    "xmlhttprequest": "~1.6.0"
   }
 }
