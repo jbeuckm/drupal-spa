@@ -3,7 +3,9 @@ drupal-spa
 
 An example using drupal-client in the browser.
 
-![Screenshot](login_box.png)
+An authenticated session:
+
+![Screenshot](logged_in.png)
 
 ### Setup ###
 
@@ -34,4 +36,7 @@ python -m SimpleHTTPServer 9000
 
 Then open the SPA at http://localhost:9000
 
-![Screenshot](logged_in.png)
+Some basic error messaging is in place:
+
+![Screenshot](login_box.png)
+
