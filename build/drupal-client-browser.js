@@ -145,6 +145,9 @@ function systemConnect(success, failure) {
     xhr.open("POST", url);
     xhr.setRequestHeader("Accept", "application/json");
 
+    var token = Settings.getString(settingsPrefix + "X-CSRF-Token", null);
+    xhr.setRequestHeader("X-CSRF-Token", token);
+
     xhr.onload = function () {
 
         if (xhr.status === 200) {

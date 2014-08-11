@@ -20,7 +20,7 @@ npm test
 
 *Note: You will need to copy test/config.json.example to test/config.json with your server info*
 
-To authenticate to Drupal from the browser, you will also need to install the [CORS module](https://www.drupal.org/project/cors).
+To authenticate to Drupal from AJAX in the browser, you will need to install the [CORS module](https://www.drupal.org/project/cors).
 
 Navigate to `admin/config/services/cors` and configure the CORS module with this domain:
 
