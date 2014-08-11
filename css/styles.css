@@ -2,6 +2,9 @@ body {
   background: #eee !important;
 }
 
+.wrapper img {
+    max-width: 290px;
+}
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
