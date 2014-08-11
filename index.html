@@ -6,19 +6,38 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body ng-controller="MainController">
+
+
+<nav class="navbar navbar-default" role="navigation" ng-show="user != null">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Drupal SPA</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" ng-click="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
 <div>
 
   <div class="wrapper">
 
-      <div class="btn-group">
-          <button type="button" class="btn btn-default">User</button>
-          <button type="button" class="btn btn-default">Content</button>
-          <button type="button" class="btn btn-default">Create</button>
-      </div>
-
     <div ng-view></div>
+
   </div>
 
 </div>
@@ -31,6 +50,7 @@
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 
 <script src="app/app.js"></script>
+<script src="app/controllers/main-controller.js"></script>
 <script src="app/controllers/login-controller.js"></script>
 <script src="app/controllers/user-controller.js"></script>
 
