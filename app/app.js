@@ -10,6 +10,10 @@ var app = angular.module('drupalSpa', ['ngRoute'])
                 templateUrl: 'app/templates/user.html',
                 controller: 'UserController'
             }).
+            when('/content', {
+                templateUrl: 'app/templates/content.html',
+                controller: 'ContentController'
+            }).
             otherwise({
                 redirectTo: '/login'
             });

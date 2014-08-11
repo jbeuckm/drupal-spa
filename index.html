@@ -9,7 +9,7 @@
 <body ng-controller="MainController">
 
 
-<nav class="navbar navbar-default" role="navigation" ng-show="user != null">
+<nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -26,8 +26,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="#/content">Content</a></li>
                 <li><a href="#/user">User</a></li>
-                <li><a href="#/login" ng-click="logout()">Logout</a></li>
+                <li><a href="#/login" ng-click="logout()" ng-show="user != null">Logout</a></li>
+                <li><a href="#/login" ng-click="login()" ng-show="user == null">Login</a></li>
             </ul>
         </div>
     </div>
@@ -54,6 +56,7 @@
 <script src="app/controllers/main-controller.js"></script>
 <script src="app/controllers/login-controller.js"></script>
 <script src="app/controllers/user-controller.js"></script>
+<script src="app/controllers/content-controller.js"></script>
 
 </body>
 
