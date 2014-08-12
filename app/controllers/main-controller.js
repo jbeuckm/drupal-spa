@@ -1,10 +1,15 @@
 angular.module('drupalSpa').controller('MainController', ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location){
 
+    $rootScope.user = null;
+
     drupal.systemConnect(
         function(result) {
             console.log(result);
-            $rootScope.user = result.user;
-            $location.path('/user');
+
+            if (result.user.uid != 0) {
+                $rootScope.user = result.user;
+                $location.path('/user');
+            }
             $scope.$apply();
         },
         function(err){
@@ -21,8 +26,8 @@ angular.module('drupalSpa').controller('MainController', ['$scope', '$rootScope'
             function(u) {
                 console.log(u);
                 $rootScope.user = null;
-                $location.path('/login');
                 $scope.$apply();
+                $location.path('/login');
             },
             function(err) {
                 console.log(err);

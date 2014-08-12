@@ -6,6 +6,10 @@ var app = angular.module('drupalSpa', ['ngRoute'])
                 templateUrl: 'app/templates/login.html',
                 controller: 'LoginController'
             }).
+            when('/register', {
+                templateUrl: 'app/templates/register.html',
+                controller: 'RegisterController'
+            }).
             when('/user', {
                 templateUrl: 'app/templates/user.html',
                 controller: 'UserController'

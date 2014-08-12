@@ -27,9 +27,10 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#/content">Content</a></li>
-                <li><a href="#/user">User</a></li>
+                <li><a href="#/user" ng-show="user != null">User</a></li>
                 <li><a href="#/login" ng-click="logout()" ng-show="user != null">Logout</a></li>
-                <li><a href="#/login" ng-click="login()" ng-show="user == null">Login</a></li>
+                <li><a href="#/login" ng-show="user == null">Login</a></li>
+                <li><a href="#/register" ng-show="user == null">Register</a></li>
             </ul>
         </div>
     </div>
@@ -54,6 +55,7 @@
 
 <script src="app/app.js"></script>
 <script src="app/controllers/main-controller.js"></script>
+<script src="app/controllers/register-controller.js"></script>
 <script src="app/controllers/login-controller.js"></script>
 <script src="app/controllers/user-controller.js"></script>
 <script src="app/controllers/content-controller.js"></script>
