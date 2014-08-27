@@ -1,11 +1,5 @@
 module.exports = function (grunt) {
     grunt.initConfig({
-        browserify: {
-            drupal: {
-                src: ['main.js'],
-                dest: 'build/drupal-client-browser.js'
-            }
-        },
 
         command : {
             server: {
@@ -16,8 +10,7 @@ module.exports = function (grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-commands');
-    grunt.loadNpmTasks('grunt-browserify');
 
-    grunt.registerTask('default', ['browserify']);
+//    grunt.registerTask('default', ['browserify']);
 
 };

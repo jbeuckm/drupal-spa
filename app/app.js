@@ -25,6 +25,8 @@ var app = angular.module('drupalSpa', ['ngRoute'])
 
     .run(function(){
 
+        window.drupal = new drupal();
+
         drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
 
     });
