@@ -23,11 +23,11 @@ var app = angular.module('drupalSpa', ['ngRoute'])
             });
     }])
 
-    .run(function(){
+    .run(['$rootScope', function($rootScope){
 
-        window.drupal = new drupal();
+        $rootScope.drupal = new drupal();
 
-        drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
+        $rootScope.drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
 
-    });
+    }]);
 

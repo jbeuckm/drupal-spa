@@ -2,7 +2,7 @@ angular.module('drupalSpa').controller('LoginController', ['$scope', '$rootScope
 
     $scope.login = function() {
 
-        drupal.login($scope.username, $scope.password,
+        $rootScope.drupal.login($scope.username, $scope.password,
             function(u) {
                 $rootScope.user = u;
                 $location.path('/user');

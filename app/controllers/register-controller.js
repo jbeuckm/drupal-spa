@@ -8,7 +8,7 @@ angular.module('drupalSpa').controller('RegisterController', ['$scope', '$rootSc
             pass: $scope.password
         };
 
-        drupal.createAccount(user,
+        $rootScope.drupal.createAccount(user,
             function(u) {
                 $rootScope.user = u;
                 $location.path('/login');

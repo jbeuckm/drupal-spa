@@ -2,7 +2,7 @@ angular.module('drupalSpa').controller('MainController', ['$scope', '$rootScope'
 
     $rootScope.user = null;
 
-    drupal.systemConnect(
+    $rootScope.drupal.systemConnect(
         function(result) {
             console.log(result);
 
@@ -22,7 +22,7 @@ angular.module('drupalSpa').controller('MainController', ['$scope', '$rootScope'
 
     $scope.logout = function() {
 
-        drupal.logout(
+        $rootScope.drupal.logout(
             function(u) {
                 console.log(u);
                 $rootScope.user = null;
