@@ -25,7 +25,7 @@ var app = angular.module('drupalSpa', ['ngRoute'])
 
     .run(['$rootScope', function($rootScope){
 
-        $rootScope.drupal = new drupal();
+        $rootScope.drupal = new Drupal();
 
         $rootScope.drupal.setRestPath('http://beigerecords.com/joe-test/', 'js_api');
 
